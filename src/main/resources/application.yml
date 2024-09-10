@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: tasks
+  messages:
+    basename: validation-messages
+  data:
+    mongodb:
+      repositories:
+        enable: true
+        type: auto
+      database: tasks
+      uri: mongodb://localhost:27017
+      username: task
+      password: orkhyNk4yDspm31T
+
+# server port
+server:
+  port: ${PORT:8080}
